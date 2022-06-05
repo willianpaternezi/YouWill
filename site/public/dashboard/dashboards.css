@@ -7,7 +7,6 @@ body {
 
 .dash-right .avisos {
   width: 100%;
-  /* border: 3px solid pink; */
   color: rgb(216, 216, 216);
   font-family: "Exo 2", sans-serif;
 }
@@ -38,7 +37,7 @@ body {
 .dash-right .avisos .div-form textarea {
   width: 100%;
   /* color: #E6005A; */
-  border: 3px solid #e6005a;
+  border: 1px solid #183052;
   background-color: white;
   border-radius: 5px;
 }
@@ -52,7 +51,7 @@ body {
   font-size: 18px;
   padding: 10px 15px;
   color: white;
-  background-color: #e6005a;
+  background-color: #00843D;
   width: 120px;
 }
 
@@ -65,7 +64,7 @@ body {
   font-size: 14px;
   padding: 5px 8px;
   color: white;
-  background-color: #e6005a;
+  background-color: #00843D;
   width: 80px;
 }
 
@@ -76,7 +75,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  border-bottom: 3px solid #e6005a;
+  border-bottom: 3px solid #00843D;
   padding: 20px;
 }
 
@@ -105,70 +104,84 @@ body {
 
 /* pagina graficos */
 
-.dash-header {
-  background-color: #212124;
-}
-
 .dash {
-  width: 75%;
+  width: 100%;
   position: relative;
   top: 0;
   left: 25%;
-  background-color: #161618;
-
-  /* width: 75%;
-    display: flex;
-    background-color: #161618;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;*/
+  background-color: #242729;
   height: 100vh;
+  border-bottom: 3px solid #00843D;
 }
 
-.regua {
+.navbar_cidades {
+  width: 60vw;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  margin-top: 30px;
-}
-
-.perigo-frio {
-  background-color: #5c6bc0;
-}
-
-.perigo-quente {
-  background-color: #ff7043;
-}
-
-.alerta-frio {
-  background-color: #42a5f5;
-}
-
-.alerta-quente {
-  background-color: #ffee58;
-}
-
-.ideal {
-  background-color: #9ccc65;
-}
-
-.item-regua {
-  padding: 5px;
-  width: 15%;
-  margin: 5px;
-  text-align: center;
-  padding-top: 15px;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 450px;
-  width: 100%;
   align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+  color: #00843D ;
+}
+
+.sydney {
+  background-color: white;
+  width: 80%;
+  height: 90vh;
+  
+}
+
+.brisbane {
+  background-color: white;
+  width: 80%;
+  height: 97vh;
+}
+
+.canberra {
+  background-color: white;
+  width: 80%;
+  height: 99vh;
+}
+
+.grafico_capital{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  height: 40%;
+  background-color: aliceblue;
+  margin-top: 40px;
+}
+
+.btn_capital{
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+  width: 50vw;
+}
+
+.grafico_rota{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  height: 40%;
+  background-color: aliceblue;
+  margin-top: 40px;
+}
+
+.btn_rota{
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+  width: 50vw;
   color: white;
+  background-color: #00843D;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2% 5%;
 }
 
 .card {
@@ -188,59 +201,4 @@ body {
   font-size: 50px;
   font-weight: lighter;
   text-align: left;
-}
-
-.cards h1 {
-  font-size: 22px;
-  width: 100%;
-  border-bottom: solid white 1px;
-  text-align: left;
-  font-weight: lighter;
-  margin: 20px;
-}
-
-.temperatura,
-.umidade {
-  margin: 5px;
-  margin-left: 20px;
-  width: 75%;
-}
-
-.cor-alerta {
-  width: 13%;
-  height: 30%;
-  border-radius: 50px;
-  margin-top: 6%;
-  /* background-color: #c7c7c7; */
-}
-
-.btns-dash {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.graph {
-  width: 80%;
-  margin: auto;
-  padding-top: 10px;
-}
-
-.tituloGraficos {
-  color: rgb(216, 216, 216);
-  display: flex;
-  justify-content: center;
-}
-
-.btn-chart {
-  font-family: "Exo 2", sans-serif;
-  border: 0;
-  font-weight: 600;
-  font-size: 18px;
-  padding: 10px 15px;
-  color: #e6005a;
-  background-color: white;
-  margin: 5px;
-  border-radius: 3px;
 }

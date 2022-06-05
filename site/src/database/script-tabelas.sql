@@ -27,19 +27,6 @@ create table votacao (
 	descricao VARCHAR(300)
 );
 
-/* altere esta tabela de acordo com o que está em INSERT de sua API do arduino */
-
-create table medida (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	dht11_umidade DECIMAL,
-	dht11_temperatura DECIMAL,
-	luminosidade DECIMAL,
-	lm35_temperatura DECIMAL,
-	chave TINYINT,
-	momento DATETIME,
-	fk_votacao INT,
-	FOREIGN KEY (fk_votacao) REFERENCES votacao(id)
-);
 
 
 /* para sql server - remoto - produção */
@@ -61,17 +48,4 @@ create table votacao (
 /* em nossa regra de negócio, um votacao tem apenas um sensor */
 	id INT PRIMARY KEY IDENTITY(1,1),
 	descricao VARCHAR(300)
-);
-
-/* altere esta tabela de acordo com o que está em INSERT de sua API do arduino */
-
-CREATE TABLE medida (
-	id INT PRIMARY KEY IDENTITY(1,1),
-	dht11_umidade DECIMAL,
-	dht11_temperatura DECIMAL,
-	luminosidade DECIMAL,
-	lm35_temperatura DECIMAL,
-	chave TINYINT,
-	momento DATETIME,
-	fk_votacao INT FOREIGN KEY REFERENCES votacao(id)
 );

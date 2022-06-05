@@ -207,7 +207,7 @@ input {
   margin-bottom: 10px;
   border: 1px solid #183052;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   border-radius: 10px;
   
  
@@ -249,6 +249,8 @@ input {
 .header-left a {
   text-decoration: none;
   color: white;
+  background-color: #e60000;
+  width: 500px;
 }
 
 .header-left {
@@ -256,29 +258,28 @@ input {
   top: 0;
   left: 0;
   z-index: 999;
-  height: 100vh;
-  width: 25%;
+  height: 110vh;
+  width: 20%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  border-right: 3px solid #32b9cd;
-  background-color: #212124;
-  /* border: 3px solid pink; */
+  border-right: 3px solid #00843D;
+  background-color: #242729;
 }
 
 .dash-right {
   display: flex;
   width: 75%;
   height: fit-content;
-  background-color: #161618;
+  background-color: #242729;
   position: relative;
   top: 0;
   left: 25%;
 }
 
 .header-left h1 {
-  color: #32b9cd;
+  color: #FFCD00;
 }
 
 .hello {
@@ -290,7 +291,7 @@ input {
 .hello h3 {
   color: #FFCD00;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .hello h3 span {
@@ -300,7 +301,7 @@ input {
 .btn-nav {
   width: 40%;
   color: white;
-  background-color: #e6005a;
+  background-color: #00843D;
   border-radius: 5px;
   text-align: center;
   padding: 2% 5%;
@@ -309,14 +310,14 @@ input {
 .btn-nav-white {
   width: 40%;
   background-color: white;
-  border: 3px solid #e6005a;
+  border: 3px solid #183052;
   border-radius: 5px;
   text-align: center;
   padding: 2% 5%;
 }
 
 .btn-nav-white h3 {
-  color: #e6005a;
+  color: #183052;
   padding: 0;
   margin: 0;
 }
@@ -331,21 +332,11 @@ input {
   margin: 0;
   padding: 0;
   width: 20%;
-  background-color: #32b9cd;
+  background-color: #183052;
   color: white;
   border-radius: 10px;
   text-align: center;
   padding: 10px 15px;
   margin-bottom: 100px;
   cursor: pointer;
-}
-
-/* pagina extra - simulador */
-.simulador {
-  color: white;
-
-}
-
-.simulador .container {
-  flex-direction: column
 }
