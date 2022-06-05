@@ -1,12 +1,12 @@
 /* pagina mural */
 
-*,
-body {
+*, body {
+  scroll-behavior: smooth;
   font-family: "Exo 2", sans-serif;
 }
 
 .dash-right .avisos {
-  width: 100%;
+  width: 70%;
   color: rgb(216, 216, 216);
   font-family: "Exo 2", sans-serif;
 }
@@ -30,13 +30,12 @@ body {
 }
 
 .dash-right .avisos .div-form input {
-  width: 100%;
+  width: 50vw;
   border-radius: 5px;
 }
 
 .dash-right .avisos .div-form textarea {
-  width: 100%;
-  /* color: #E6005A; */
+  width: 51vw;
   border: 1px solid #183052;
   background-color: white;
   border-radius: 5px;
@@ -104,14 +103,14 @@ body {
 
 /* pagina graficos */
 
-.dash {
-  width: 100%;
-  position: relative;
-  top: 0;
-  left: 25%;
+.dash_votacao {
+  width: 100vw;
   background-color: #242729;
   height: 100vh;
-  border-bottom: 3px solid #00843D;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .navbar_cidades {
@@ -148,17 +147,29 @@ body {
   align-items:center;
   justify-content: center;
   flex-direction: column;
-  width: 70%;
+  width: 85%;
   height: 40%;
   background-color: aliceblue;
-  margin-top: 40px;
+  
 }
 
 .btn_capital{
   display: flex;
-  margin-top: 60px;
-  justify-content: space-between;
-  width: 50vw;
+  width: 90%;
+  justify-content: space-around;
+  
+}
+.classe_btn {
+  cursor: pointer;
+  font-family: "Exo 2", sans-serif;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 15px;
+  color: white;
+  background-color: #00843D;
+  width: 100px;
 }
 
 .grafico_rota{
@@ -166,7 +177,7 @@ body {
   align-items:center;
   justify-content: center;
   flex-direction: column;
-  width: 70%;
+  width: 85%;
   height: 40%;
   background-color: aliceblue;
   margin-top: 40px;
@@ -174,14 +185,9 @@ body {
 
 .btn_rota{
   display: flex;
-  margin-top: 60px;
-  justify-content: space-between;
-  width: 50vw;
-  color: white;
-  background-color: #00843D;
-  border-radius: 5px;
-  text-align: center;
-  padding: 2% 5%;
+  width: 90%;
+  justify-content: space-around;
+
 }
 
 .card {

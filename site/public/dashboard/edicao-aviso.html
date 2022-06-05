@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouWill | Dicas e Comentários</title>
 
-    <link rel="icon" href="./assets/icon/logo aus.png">
+    <link rel="icon" href="../assets/icon/logo aus.png">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="./dashboards.css">
+    <link rel="stylesheet" href="../css/dashboards.css">
     <script src="../js/funcoes.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -60,7 +60,7 @@
         <div class="dash-right">
 
             <div class="avisos">
-                <div class="container">
+                <div class="container_aviso">
                     <h1>Editar um aviso</h1>
                     <div class="div-form">
                         <label>
@@ -116,7 +116,7 @@
 
             if (resposta.ok) {
                 window.alert("Post atualizado com sucesso pelo usuario de email: " + sessionStorage.getItem("EMAIL_USUARIO") + "!");
-                window.location = "/dashboard/mural.html"
+                window.location = "/dashboard/comentarios.html"
             } else if (resposta.status == 404) {
                 window.alert("Deu 404!");
             } else {

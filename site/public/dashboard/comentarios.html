@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouWill | Dicas e Comentários</title>
 
-    <link rel="icon" href="./assets/icon/logo aus.png">
+    <link rel="icon" href="../assets/icon/logo aus.png">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="./dashboards.css">
+    <link rel="stylesheet" href="../css/dashboards.css">
     <script src="../js/funcoes.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -58,7 +58,7 @@
         <div class="dash-right">
 
             <div class="avisos">
-                <div class="container">
+                <div class="container_feed">
                     <h1>Compartilhe conosco sua rota favorita:</h1>
                     <div class="div-form">
                         <form id="form_postagem" method="post" onsubmit="return publicar()">
@@ -118,7 +118,7 @@
 
             if (resposta.ok) {
                 window.alert("Post realizado com sucesso pelo usuario de ID: " + idUsuario + "!");
-                window.location = "/dashboard/mural.html";
+                window.location = "/dashboard/comentarios.html";
                 limparFormulario();
                 finalizarAguardar();
             } else if (resposta.status == 404) {
@@ -154,7 +154,7 @@
 
             if (resposta.ok) {
                 window.alert("Post deletado com sucesso pelo usuario de email: " + sessionStorage.getItem("EMAIL_USUARIO") + "!");
-                window.location = "/dashboard/mural.html"
+                window.location = "/dashboard/comentarios.html"
             } else if (resposta.status == 404) {
                 window.alert("Deu 404!");
             } else {

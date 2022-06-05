@@ -11,9 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouWill | Votação</title>
 
-    <link rel="icon" href="./assets/icon/logo aus.png" />
+    <link rel="icon" href="../assets/icon/logo aus.png" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="dashboards.css" />
+    <link rel="stylesheet" href="../css/dashboards.css">
     <script src="../js/funcoes.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -29,7 +29,7 @@
     ></script>
   </head>
 
-  <body onload="validarSessao(), atualizarFeed()">
+  <body>
     <div class="janela">
       <div class="header-left">
         <h1>YouWill</h1>
@@ -59,25 +59,47 @@
         </div>
       </div>
 
-      <div class="dash">
-        <div class="grafico_capital">Você sabe qual é a capital da Australia? <br>
-            <div class="btn_capital">
-            <button onclick="c_sydney()">Sydney</button>
-            <button onclick="c_brisbane()">Brisbane</button>
-            <button onclick="c_canberra()">Canberra</button>
-            </div>
+      <div class="dash_votacao">
+        <div id="div_capital" class="grafico_capital">
+          Você sabe qual é a capital da Australia? <br />
+          <div class="btn_capital">
+            <button class="classe_btn" onclick="btn_capital()">Sydney</button>
+            <button class="classe_btn" onclick="btn_capital()">Brisbane</button>
+            <button class="classe_btn" onclick="btn_capital()">Canberra</button>
+          </div>
         </div>
 
-        <div class="grafico_rota">Qual foi a sua rota preferida? <br>
+        <div id="div_rota" class="grafico_rota">
+          Qual foi a sua rota preferida? <br />
             <div class="btn_rota">
-            <button onclick="r_sydney()">Sydney</button>
-            <button onclick="r_brisbane()">Brisbane</button>
-            <button onclick="r_canberra()">Canberra</button>
-            </div>
+              <button class="classe_btn" onclick="btn_rota()">Sydney</button>
+              <button class="classe_btn"onclick="btn_rota()">Brisbane</button>
+              <button class="classe_btn" onclick="btn_rota()">Canberra</button>
+          </div>
         </div>
       </div>
     </div>
   </body>
 </html>
 
-<script></script>
+<script>
+  var votacao_capital = localStorage.getItem('@voto_capital')
+  var votacao_rota = localStorage.getItem('@voto_rota')
+
+  if(votacao_capital === 'true'){
+    div_capital.innerHTML = "<div style='font-size: 72px ;color: green;' >Obrigado pelo seu voto! </div>" 
+  }
+  if(votacao_rota === 'true'){
+  div_rota.innerHTML = "<div style='font-size: 72px ;color: green;' >Obrigado pelo seu voto! </div>" 
+  }
+
+  function btn_capital(){
+    div_capital.innerHTML = "<div style='font-size: 72px ;color: green;' >Obrigado pelo seu voto! </div>" 
+    localStorage.setItem('@voto_capital','true')
+    }
+
+  function btn_rota(){
+    div_rota.innerHTML = "<div style='font-size: 72px ;color: green;' >Obrigado pelo seu voto! </div>" 
+    localStorage.setItem('@voto_rota','true')
+  }
+</script>
