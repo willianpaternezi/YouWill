@@ -210,14 +210,15 @@
   width: 85%;
   height: 40%;
   background-color: aliceblue;
-  
+  font-size: 32px;
+  color: #183052;
 }
 
 .btn_capital{
   display: flex;
   width: 90%;
   justify-content: space-around;
-  
+  margin-top: 50px;
 }
 .classe_btn {
   cursor: pointer;
@@ -241,13 +242,15 @@
   height: 40%;
   background-color: aliceblue;
   margin-top: 40px;
+  font-size: 32px;
+  color: #183052;
 }
 
 .btn_rota{
   display: flex;
   width: 90%;
   justify-content: space-around;
-
+  margin-top: 50px;
 }
 
 .card {

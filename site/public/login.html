@@ -126,7 +126,7 @@
 
             if (resposta.ok) {
                 console.log(resposta);
-
+                localStorage.clear()
                 resposta.json().then(json => {
                     console.log(json);
                     console.log(JSON.stringify(json));
