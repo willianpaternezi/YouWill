@@ -40,7 +40,6 @@ function finalizarAguardar(texto) {
     }
 }
 
-
 // modal
 function mostrarModal() {
     var divModal = document.getElementById("div_modal");
@@ -52,9 +51,7 @@ function fecharModal() {
     divModal.style.display = "none";
 }
 
-
 // carrossel
-
 
 const imgs_carrossel = [
     {

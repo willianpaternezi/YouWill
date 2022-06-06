@@ -87,8 +87,6 @@ body {
   right: 0;
 }
 
-
-
 /* FOOTER */
 
 .footer {
@@ -110,7 +108,6 @@ body {
   margin: auto;
   justify-content: center;
 }
-
 
 /* LOGIN */
 
@@ -214,7 +211,6 @@ input {
   text-align: left;
   border-radius: 10px;
   
- 
 }
 
 .btn {
