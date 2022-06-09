@@ -84,14 +84,14 @@
   var votacao_rota = localStorage.getItem('@voto_rota')
 
   if(votacao_capital === 'true'){
-    div_capital.innerHTML = "<div style='font-size: 72px ;color: green;' >Obrigado pelo seu voto! </div>" 
+    div_capital.innerHTML = "<div style='font-size: 72px ;color: green;' >Obrigado pelo seu voto!<br> Canberra é a capital </div>" 
   }
   if(votacao_rota === 'true'){
   div_rota.innerHTML = "<div style='font-size: 72px ;color: green;' >Obrigado pelo seu voto! </div>" 
   }
 
   function btn_capital(){
-    div_capital.innerHTML = "<div style='font-size: 72px ;color: green;' >Obrigado pelo seu voto! </div>" 
+    div_capital.innerHTML = "<div style='font-size: 72px ;color: green;' >Obrigado pelo seu voto!<br> Canberra é a capital </div>" 
     localStorage.setItem('@voto_capital','true')
     }
 
